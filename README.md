@@ -1,3 +1,4 @@
 # WebDev-2_Dashboard
 
-<img width="1919" height="974" alt="image" src="https://github.com/user-attachments/assets/faefb210-8c5f-4843-8678-d01ca30350cc" />
+<img width="1919" height="958" alt="image" src="https://github.com/user-attachments/assets/4bb077ea-9222-476f-bac8-2fa2d2d40045" />
+
