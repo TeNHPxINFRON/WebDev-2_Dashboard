@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+  background: #0f172a;
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  background: #1e293b;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #334155;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.card h2 {
+  margin-bottom: 15px;
+}
+
+
+.wide {
+  grid-column: span 1;
+}
+
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #334155;
+  color: #e2e8f0;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  background: #475569;
+}
+
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+
+.events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.events-header button {
+  margin-left: 10px;
+  background: #64748b;
+}
+
+.events-header button:hover {
+  background: #475569;
+}
+
+
+.event {
+  background: #334155;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  position: relative;
+  transition: 0.2s;
+}
+
+.event:hover {
+  transform: translateY(-2px);
+}
+
+
+.delete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ef4444;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.delete:hover {
+  background: #dc2626;
+}
+
+
+.tag {
+  display: inline-block;
+  margin: 6px 0;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #22c55e;
+  font-size: 12px;
+  font-weight: bold;
+  color: #022c22;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
